@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandresh Fittnes</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /*css reset*/
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        color: rgb(223, 143, 143);
+        margin: 0px;
+        padding: 0px;
+        background: url('img/gym.jpeg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .left {
+        display: absolute;
+        position: absolute;
+        left: 55px;
+        top: 25px;
+        /*border: 2px solid yellow;*/
+    }
+
+    .mid {
+        display: block;
+        width: 42%;
+        /*top: 25px;*/
+        margin: 25px auto;
+        /*border: 2px solid yellow;*/
+    }
+
+    .right {
+        position: absolute;
+        right: 35px;
+        top: 35px;
+        display: inline-block;
+        /*border: 2px solid yellow;*/
+
+    }
+
+    .navbar {
+
+        display: inline-block;
+    }
+
+    .navbar li {
+        color: lemonchiffon;
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: lemonchiffon;
+        text-decoration: none;
+        padding: 35px 25px;
+    }
+
+    .navbar li a:hover , .navbar li a.active {
+        text-decoration: underline;
+        color: yellowgreen;
+    }
+    .left img{
+        width: 130px;
+        /*filter: invert(150%);*/ /* This Function Is Used For Changing The Image Color*/
+    }
+    .left dev{
+        line-height: 20px;
+        font-size: 25px;
+        text-align: center;
+
+}
+.btn{
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 0px 10px;
+    background-color: blueviolet;
+    color: wheat;
+    padding: 4px 15px;
+    border: 2px solid darkgoldenrod;
+    border-radius: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(12, 11, 11) ;
+}
+.container{
+    /*border: 2px solid yellow;*/
+    margin: 110px 45px;
+    padding: 70px 25px;
+    width: 35%;
+    border-radius: 15px;
+    
+    }
+.form-group input{
+        font-size: 20px;
+        text-align: center;
+        display: block;
+        width: 505px;
+        border: 2px solid darkgoldenrod;
+        margin: 15px auto;
+        border-radius: 10px;
+        font-family: 'Baloo Bhai 2', cursive;
+        padding: 1px;
+       }
+       .container h1{
+           text-align: center;
+       }
+       .container button{
+           display: block;
+           width: 95%;
+           margin: auto;
+
+       }
+</style>
+
+<body>
+    <header class="header">
+            <!--Left Box For Logo-->
+            <div class="left">
+               <img src="img/Dumble.jpeg" alt="">
+                <div>Chandresh Fitness</div>
+            </div>
+          
+        <div class="mid">
+            <!--Mid Box For Navigation-->
+
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" >About Us</a></li>
+                <li><a href="#" >Fitness Calculator</a></li>
+                <li><a href="#" >Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!--Right Box For Button-->
+            <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join My GYM </h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Email-id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
